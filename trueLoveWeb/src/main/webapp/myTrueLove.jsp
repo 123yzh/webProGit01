@@ -7,8 +7,11 @@
 <link rel="stylesheet" href="./css/myTrueLove/base.css">
 <link href="./css/myTrueLove/mydatamain.css" rel="stylesheet"
 	type="text/css">
-
-<div class="my-jiayuan-abnormal-login" id="head_tips" style="">
+<body>
+<div style="clear:both;height:50px;">
+	<jsp:include page="WEB-INF/page/head04.jsp"></jsp:include>
+</div>
+<div class="my-jiayuan-abnormal-login" id="head_tips" style="clear:both">
 	<a href="javascript:;" class="my-jiayuan-abnormal-close">&nbsp;</a>
 	<ul id="head_tips_ul">
 		<li>
@@ -3008,7 +3011,7 @@ body {
 
 
 	<div id="jy_common_foot"
-		style="position: absolute; margin-top: 1740px; margin-left: 0px;">
+		style="position: absolute; margin-top: 1790px; margin-left: 0px;">
 		<div class="hf_foot" id="common_footer">
 			<p id="bottom_nav_link">
 				<a name="foot_nav_link" href="#" target="_blank">联系客服</a> <a
