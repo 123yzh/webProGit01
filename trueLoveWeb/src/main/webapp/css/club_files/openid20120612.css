@@ -1,0 +1,38 @@
+	.alert_right{
+		padding-bottom: 90px;
+	}
+	.alert_left{
+		padding-bottom: 0;
+	}
+	.alert_bg2{
+		height: 285px;
+	}
+	.pop_openid{
+		color: #999;
+		line-height: 1;
+		font-size: 12px;
+		margin: 0 13px;
+	}
+	.pop_openid p{
+		padding: 5px 2px 5px 5px;
+		line-height: 1;
+	}
+	.pop_openid span{
+		color: #c6c6c6;
+		margin: 0 2px;
+	}
+	.pop_openid a{
+		color: #666;
+		text-decoration: none;
+		overflow: hidden;
+		padding: 5px 0 5px 2px;
+		margin-right: 5px;
+	}
+	.pop_openid a img{
+		vertical-align: text-bottom;
+		margin: 0 3px 0 0;
+	}
+	.pop_openid a:hover{
+		color: #0063DC;
+		text-decoration: none;
+	}

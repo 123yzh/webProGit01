@@ -1,0 +1,177 @@
+.top-banner {
+			background-color: rgba(255, 255, 255, 0.55);
+		}
+		.top-banner a {
+			color: #019135;
+		}
+		h1 {
+			margin-top: 100px;
+			font-family: 'Microsoft Yahei';
+			font-size: 36px;
+			color: #019157;
+		}
+		.wrapper ul li a img{
+			width:100%;
+			height:230px;
+		}	
+		<!--轮播css结束-->
+		body{
+			margin:0px auto;
+		}
+		.common_font_size{
+			font-size:12px;
+		}
+		.index_page_top{
+			background-color:#444444;
+			height:30px;
+			color:#FFF;
+			font-size:13px
+		}
+		.index_page_top_button{
+			background-color:#2492FF;
+			color:#FFF;
+			border-radius:5px;
+			border:none;
+		}
+		
+		.index_page_top table tr td{
+			background-color:#444444;
+			width:70px;
+		}
+		.index_page_div{
+			width:80%;/*控制整体网页大小*/
+			margin:0px auto;
+		}
+		.love_web_head_page_left{
+			float:left;
+		}
+		
+		.love_web_head_page_right{
+			float:right;
+		}
+		
+		.love_web_navi_page{
+			clear:both;
+		}
+		
+		.love_web_navi_page_left{
+			float:left;
+		}
+		
+		.love_web_navi_page_right{
+			float:right;
+			width:230px;
+		}
+		#navi_tb_01{
+			margin-right:20px;
+		}
+		.love_web_navi_page_left table tr td a,.love_web_navi_page_right table tr td a{
+			font-weight:bold;
+			font-style:italic;/*字体倾斜*/
+			color:#F69;
+			text-decoration:none;
+			
+		}
+		.love_web_navi_page_left table tr td:hover,.love_web_navi_page_right table tr td:hover{
+			font-weight:bold;
+			font-style:italic;/*字体倾斜*/
+			color:#FFF;
+			background-color:#F39;
+		}
+		.love_web_navi_page_left table tr td a:hover,.love_web_navi_page_right table tr td a:hover{
+			font-weight:bold;
+			font-style:italic;/*字体倾斜*/
+			color:#FFF;
+			text-decoration:none;
+		}
+		.love_user_login_div{
+			clear:both;
+			height:248px;
+		}
+		.love_user_login_left_div{
+			margin-top:11px;
+			float:left;
+			width:30%;
+			height:230px;
+		}
+		.love_user_login_right_div{
+				float:right;
+				width:70%;
+		}
+		.user_login{
+			clear;both;
+		}
+		.user_login .login_input{
+			 background-color:#F3C;
+			 width:90px;color:#FFF;
+			 height:30px;
+			 border-radius:8px;/*圆角边框*/
+			 border:none;/*去边框*/
+			 /*去外层边框的方案：①设置外部颜色②使用提交方式*/
+		}
+		.happiness_hourse_div{
+			clear:both;
+		}
+		.happiness_hourse_div_left{
+			float:left;
+		}
+		.happiness_hourse_div_right{
+			float:right;
+			margin-top:33px;
+		}
+		#td_1,#td_3,#td_4,#td_5,#td_6{
+			border-bottom-color:red;
+			border-top:none;
+			border-left:none;
+			border-right:none;
+			border-width:none;
+		}
+		.happiness_hourse_div .happiness_hourse_div_left table tr td table tr td a{
+			color:#666;
+			text-decoration:none;
+		}
+		
+		.happiness_hourse_div .happiness_hourse_div_left table tr td table tr td a:hover{
+			color:#F69;
+			text-decoration:none;
+		}
+		/*选项卡div开始*/
+		.happyness_house_tab{
+			clear:both;
+		}
+		
+		.view-list gclearfix ul li img{
+			width:200px;
+			height:200px;
+		}
+		#table_02{
+			margin-top:-5px;
+		}
+		
+		.happiness_webPagefooter01,.happiness_webPagefooter02{
+			clear:both;
+		}
+		.happiness_webPagefooter02{
+			 margin-top:155px;
+			 border-radius:15px;
+			 border-top-left-radius:0;
+			 border-top-right-radius:0;
+			 background-color:#E0E0E0;
+		}
+		.happiness_webPagefooter01 img{
+			margin-top:55px;
+			position:absolute;
+			width:80%;
+		}
+		#happness_web_footer{
+			clear:both;
+			margin-top:5px;
+		}
+		.happiness_webPagefooter02 table tr td a,#happness_web_footer table tr td table tr td,#happness_web_footer table tr td table tr td a{
+			text-decoration:none;
+			color:#39F;
+		}
+		.happiness_webPagefooter02 table tr td a:hover,#happness_web_footer table tr td table tr td a:hover{
+			text-decoration:none;
+			color:#F0F;
+		}

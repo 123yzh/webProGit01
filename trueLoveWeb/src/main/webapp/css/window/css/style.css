@@ -1,0 +1,9 @@
+/* CSS Document */
+*{ margin:0; padding:0;}
+
+h1{ text-align:center; width:900px; margin-top:40px; font-size:50px; color:#ffffff;}
+.info{ width:900px;margin:0px auto; text-align:center; padding-top:80px; background-color:#003547; }
+.content{ padding:20px; widows:900px; line-height:30px;text-indent:2em; text-align:left; color:#ffffff;}
+
+
+

@@ -1,0 +1,109 @@
+.winners a{color: #2c81d6;} 
+
+.jddhpopup .mt10 {margin-top: 0px;padding-left:0;text-align: center;margin:0 15px;}
+.jddhpopup .PBtn{margin-top: 30px;}
+.jddhpopup .club_tipPopMain{height: 135px;}
+.jddhpopup .ml154{margin-left: 125px;}
+.ml139 {margin-left: 130px;}
+a.drawAgain:hover{text-decoration:none;}
+a.singleAgain{position: absolute;right: 57px;bottom: 2px;font: 14px "微软雅黑";display: block;color: #ec431b;text-decoration: underline;cursor: pointer;z-index: 2;}
+.jindou_plus{position: absolute;display: none;opacity: 1;top: 26px;left: 69px;color: #e65569;font-size: 12px;font-weight:bold;z-index: 3;}
+.jy-beans{ width: 930px; background: #FFF;padding: 20px 0 0 20px;}
+.jy-beans-t{ height: 70px; background-color: #f6ede6; }
+.jy-beans-t h2{ font: 24px/70px "微软雅黑",Arail; color: #89503f; padding-left: 22px; margin-right: 16px; }
+.jy-beans-t .num{ background-color: #f03b6e; padding: 0 17px 0 13px; margin-top: 21px; }
+.num .t1{ font: 24px/28px Arial; color: white; margin-right: 6px; }
+.num .t2{ font: 12px Arial; color: white; margin-top: 7px; }
+.jy-per-inf{ padding-top: 9px; padding-right: 32px; }
+.jy-per-inf dt,.jy-beans-winlist dl dt,.jy-beans-winlist2 dl dt{ float: left; border: 1px solid #dadada; background-color: white; padding: 1px; }
+.jy-per-inf dt img,.jy-beans-winlist dl dt img,.jy-beans-winlist2 dl dt img{ display: block; }
+.jy-per-inf dd{ padding-left: 11px; float: left; width: 150px; }
+.nickname{ font: bold 12px/28px "宋体"; color: #666; }
+.jy-per-inf dd p .myGrade{ width: 43px; height: 17px; background: url(../i/bg_grade.gif) no-repeat; margin-right: 18px; }
+#userDesc .s2 {background-position: 0 -20px;}
+#userDesc .s3 {background-position: 0 -40px;}
+#userDesc .s4 {background-position: 0 -60px;}
+#userDesc .s5 {background-position: 0 -80px;}
+.jy-per-inf dd .t1{ font: 12px/18px "宋体"; color: #666;  }
+.jy-per-inf dd .t2{ font: 16px/18px "微软雅黑"; color: #e7417f; }
+.jy-beans-c{ background-color: #f4f4f4; padding-bottom: 44px; }
+.jy-beans-imm{ }
+.jy-beans-imm ul{ position: relative; top: 59px; left: 55px; width: 550px; height: 380px; }
+.jy-beans-imm ul li{ position: absolute; }
+.jy-beans-imm ul li span,.jy-beans-imm ul li a{ display: block; width: 171px; height: 110px; background-repeat: no-repeat; background-image: url(../i/draw2/imm-def6.png);  }
+.jy-beans-imm ul li.l5 a.gray,.jy-beans-imm ul li span.cur{ background-image: url(../i/draw2/imm6.png); cursor: default; }
+.jy-beans-imm ul li.l1{ top: 0; left: 0; }
+.jy-beans-imm ul li.l2{ top: 0; left: 185px; }
+.jy-beans-imm ul li.l3{ top: 0; left: 370px; }
+.jy-beans-imm ul li.l4{ top: 121px; left: 370px }
+.jy-beans-imm ul li.l5{ top: 121px; left: 185px; }
+.jy-beans-imm ul li.l6{ top: 242px; left: 370px; }
+.jy-beans-imm ul li.l7{ top: 242px; left: 185px; }
+.jy-beans-imm ul li.l8{ top: 242px; left: 0; }
+.jy-beans-imm ul li.l9{ top: 121px; left: 0; }
+.jy-beans-imm ul li.l1 span{ background-position: 0 0; }
+.jy-beans-imm ul li.l2 span{ background-position: -185px 0; }
+.jy-beans-imm ul li.l3 span{ background-position: -368px 0; }
+.jy-beans-imm ul li.l4 span{ background-position: 0 -121px; }
+.jy-beans-imm ul li.l5 a{ background-position: -185px -121px; cursor: pointer; }
+.jy-beans-imm ul li.l6 span{ background-position: -368px -121px; }
+.jy-beans-imm ul li.l7 span{ background-position: 0 -243px; }
+.jy-beans-imm ul li.l8 span{ background-position: -185px -243px; }
+.jy-beans-imm ul li.l9 span{ background-position: -368px -243px; }
+.jy-beans-winlist{ padding: 1px; background-color: white; margin-top: 40px; margin-right: 60px; display: inline; width: 215px; }
+.jy-beans-winlist h3{ line-height: 33px; background-color: #d6b69d; font: bold 14px/33px "宋体"; color: white; padding-left: 11px; }
+.dl-w { height: 318px; overflow: hidden; margin-top: 20px; position: relative; }
+.dl-w .dl-s{ position: absolute; top: 0; left: 0; }
+.dl-w dl{ padding-bottom: 20px; padding-left: 17px; }
+.dl-w dl dd,.dl-w2 dl dd{ padding-left: 12px; float: left; font: 12px/20px "宋体"; }
+.dl-w dl dd .t1,.dl-w2 dl dd .t1{ color: #2c81d6; }
+.dl-w dl dd .t2,.dl-w2 dl dd .t2{ color: #e7417f; }
+.jy-beans-er{}
+.jy-beans-er h2{ padding-left: 22px; background-color: #e6eff6; color: #5895c5; }
+.jy-beans-er h2 .t1{ font: 24px/70px "微软雅黑"; }
+.jy-beans-er h2 .t2{ font: 14px/70px "微软雅黑"; }
+.scratch{ background: #f4f4f4 url(../i/draw2/gg.png) no-repeat 9px 20px; padding-top: 20px; height: 470px; }
+.scratch ul{ position: relative; top: 113px; left: 87px; width: 744px; height: 249px; }
+.scratch ul li{ float: left; width: 248px; height: 229px; padding-top: 20px; position: relative; }
+.scratch ul li p{ text-align: center; }
+.scratch ul li .t1{ color: #ed431b; font: 24px/28px "微软雅黑"; }
+.scratch ul li .t2{ color: #ed431b; font: 16px/28px "微软雅黑"; }
+.scratch ul li .t4{ color: #ed431b; font: 18px/24px "微软雅黑"; }
+.scratch .gjq{ position: absolute; width: 188px; height: 75px; top: 98px; left: 29px; z-index: 2; }
+.scratch .gjq p{ font:19px/75px "微软雅黑";  color: #ec431b; text-align: center;  }
+.scratch .gjq1{ position: absolute; top: 0; left: 0; width: 188px; height: 75px; background: url(../i/draw2/gjq.png) no-repeat; z-index: 2;}
+.scratch .gjq2{ position: absolute; top: 0; left: 0; width: 188px; height: 75px; background: url(../i/draw2/gjq-h.png) no-repeat; z-index: 1; }
+.scratch .pointer{ position: absolute; top: 22px; left: 0; width: 56px; height: 91px; background: url(../i/draw2/pointer.png) no-repeat; z-index: 3; display: none; }
+.scratch p.t3{ position: absolute; top: 190px; width: 100%; font: bold 14px '宋体'; z-index: 1; }
+.scratch p.t3 .c1{ color: #151515; margin-right: 7px;  }
+.scratch p.t3 .c2{ color: #5895c5; }
+.jy-beans-winlist2{ padding: 14px; background-color: #f4f4f4; margin:0; }
+.jy-beans-winlist2 .tit{ font: 18px/50px "微软雅黑"; width: 105px; color: #333; }
+.dl-w2{ width: 780px; position: relative; height: 50px; overflow: hidden; }
+.dl-w2 .dl-s{ position: absolute; top: 0px; left: 0; width: 999em; }
+.dl-w2 dl{ float: left; width: 195px; }
+.dl-w2 dl dd p{ line-height: 25px; }
+.jy-beans-exp{ }
+.jy-beans-exp h2{ font: bold 18px/50px "微软雅黑"; color: #333;padding-bottom: 10px;}
+.jy-beans-exp p{ font: 14px/28px "宋体"; color: #666; }
+.jy-beans-exp p.mt{ border-bottom: 1px solid #e3e3e3;margin-top: 0;padding: 34px 2px;font-size: 14px;margin-bottom: 10px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

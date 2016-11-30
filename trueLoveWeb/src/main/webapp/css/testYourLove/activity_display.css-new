@@ -1,0 +1,26 @@
+@charset "utf-8";
+.topbg {width:952px;margin:0 auto;}
+.topbg img {float:left;}
+
+.program {width:952px;padding-bottom:6px;margin:0 auto;background:url(../images/bottom.jpg) no-repeat bottom;overflow:hidden;}
+.program ul {width:948px;float:left;border-left:2px solid #7E0142;border-right:2px solid #7E0142;}
+.program ul li {width:472px;height:175px;padding-top:22px;float:left;background:url(../images/show_bg.jpg) no-repeat;border-bottom:1px solid #FFD3F5;}
+.program ul li.right_li {border-left:1px solid #FFD3F5;}
+.program ul li .sign_up {float:left;padding-left:50px;width:170px;padding-top:1px;background:url(../images/img_bg.jpg) 50px 0 no-repeat;text-align:center;}
+.program ul li .sign_up a {display:block;background:url(../images/i520/bg_btn.gif) no-repeat;width:102px;height:26px;line-height:26px;font-size:14px;font-weight:bold;color:#fff;margin:0 auto;margin-top:10px;text-align:center;}
+.program ul li .sign_up a:hover {background-position:0 -36px;color:#fff !important;}
+.program ul li h2 {font-size:14px;color:#DC4185;margin-bottom:5px;}
+.program ul li p {font-size:14px;color:#676566;line-height:24px;}
+
+
+
+
+
+
+
+
+
+
+
+
+

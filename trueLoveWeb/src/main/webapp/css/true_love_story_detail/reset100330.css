@@ -1,0 +1,116 @@
+/* ==全局CSS== */
+*{margin:0;padding:0;} 
+table{border-collapse:collapse;border-spacing:0;} 
+fieldset,img{border:0;} 
+address,caption,cite,code,dfn,em,th,var,i{font-style:normal;font-weight:normal;} 
+ol,ul {list-style:none;} 
+caption,th {text-align:left;} 
+h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal;} 
+q:before,q:after{content:'';}
+html,body{width:100%;height:100%;font-size:12px;font-family:Arial, SimSun;}
+body{color:#636363;}
+div, td {word-wrap:break-word;word-break:break-all;}
+
+/* ==IE hack== */
+.clearline{clear:both;}
+.hackbox{display:table;}
+
+/* ==外部框架== */
+.container{width:930px;margin:0 auto;background:#fff;padding:0 10px;clear: both;}
+.container2{width:950px;margin:0 auto;padding:0;background:none;height:148px;overflow:hidden;}
+.confix:after{content:".";display:block;height:0;clear:both;visibility:hidden;}
+.container22{width:950px;margin:0 auto;padding:159px 0 0;background:url(../i/bg_body_top.jpg) no-repeat;height:148px;overflow:hidden;}
+#btn_gbbj{position:relative;top:-306px;left:877px;width:72px;height:22px;cursor:pointer;display:block;}
+
+/* ==头尾== */
+.cggs_head{width:950px;height:148px;background:url(../i/bg100330_head.jpg) no-repeat;}
+.container22 .cggs_head{background:none;}
+.cggs_head p.p1{width:730px;height:30px;overflow:hidden;padding:50px 10px 0 210px;}
+.cggs_head p.p1 span{float:right;margin-top:5px;}
+.cggs_head p.p1 input,.cggs_head p.p1 img{vertical-align:middle;}
+.cggs_head p.p1 input.ipt1{width:92px;height:22px;padding:0;border:0;background:url(../i/bg100330_01.png) no-repeat -73px -72px;line-height:22px;}
+.cggs_head p.p2{width:750px;height:31px;overflow:hidden;padding:18px 10px 0 190px;}
+.cggs_head p.p2 a{float:left;width:68px;text-align:center;line-height:31px;height:31px;display:block;color:#fff;text-decoration:none;}
+.cggs_head p.p2 a:hover{background:url(../i/bg100428.jpg) no-repeat;color:#654688;text-decoration:none;}
+.cggs_head p.p2 a.on{width:66px;padding-right:2px;background:url(../i/bg100428.jpg) no-repeat;color:#654688;font-weight:bold;text-decoration:none;font-size:14px;}
+.zt_foot{width:930px;float:left;background:url(../i/bg100330_foot.jpg) no-repeat center top;font-size:12px;padding:20px 0 40px;text-align:center;line-height:2;color:#654688;margin-top:10px;}
+.zt_foot a{color:#654688;text-decoration:none;}
+.zt_foot a:hover{color:#654688;text-decoration:underline;}
+
+/* ==框架== */
+.story_left{float:left;width:670px;}
+.story_right{float:right;width:250px; margin-top:10px;}
+.story_all{float:left; width:930px;}
+
+.l1{height:1px;font-size:1px;overflow:hidden;display:block;background:#D8CAE4;margin:0 5px;clear:both;}
+.l2{height:1px;font-size:1px;overflow:hidden;display:block;background:#fff;border-right:2px solid #D8CAE4;border-left:2px solid #D8CAE4;margin:0 3px;clear:both;}
+.l3{height:1px;font-size:1px;overflow:hidden;display:block;background:#fff;border-right:1px solid #D8CAE4;border-left:1px solid #D8CAE4;margin:0 2px;clear:both;}
+.l4{height:2px;font-size:1px;overflow:hidden;display:block;background:#fff;border-right:1px solid #D8CAE4;border-left:1px solid #D8CAE4;margin:0 1px;clear:both;}
+
+a{color:#636363;text-decoration:none;}
+a:hover{color:#636363;text-decoration:underline;}
+a.a1,a.a1:hover{width:87px;height:23px;line-height:23px;display:block;text-align:center;background:url(../i/bg100330_01.png) no-repeat 0 -24px;font-weight:bold;font-size:14px;color:#fff;text-decoration:none;cursor:pointer;}
+a.a2,a.a2:hover{color:#654688;text-decoration:underline;}
+a.a3,a.a3:hover{color:#654688;}
+a.a4,a.a4:hover{width:70px;height:23px;line-height:23px;display:block;text-align:center;background:url(../i/bg100330_01.png) no-repeat -88px -310px;color:#fff;text-decoration:none;cursor:pointer;}
+a.a5,a.a5:hover{width:87px;height:23px;line-height:23px;display:block;text-align:center;background:url(../i/bg100330_01.png) no-repeat 0 -310px;font-weight:bold;font-size:14px;color:#fff;text-decoration:none;cursor:pointer;}
+a.a6,a.a6:hover{width:76px;height:20px;padding-right:4px;line-height:20px;display:block;background:url(../i/bg100330_01.png) no-repeat -81px -48px #fff;text-align:center;color:#fff;text-decoration:none;}
+a.a7,a.a7:hover{width:50px;height:23px;line-height:23px;display:block;text-align:center;background:url(../i/bg100330_01.png) no-repeat -121px -310px;font-weight:bold;font-size:14px;color:#fff;text-decoration:none;cursor:pointer;}
+
+.font14b654688{font-size:14px;font-weight:bold;color:#654688;}
+.font12b654688{font-weight:bold;color:#654688;}
+.fontFF3300{color:#FF3300;}
+.font14654688{font-size:14px;color:#654688;}
+.font12654688{color:#654688;}
+.fontbbFF3366{font-weight:bold;font-size:20px;color:#FF3366;}
+.fontbFF3366{font-weight:bold;color:#FF3366;}
+.fontFF3366{color:#FF3366;}
+
+img.imgpb{padding:3px;background:#fff;border:1px solid #D8CAE4;}
+img.imgb{width:410px;height:275px;border:1px solid #654688;}
+
+.pageclass{width:100%;float:left;padding:10px 0;}
+.pageclass ol{width:100%;float:left;}
+.pageclass li{float:right;background:url(../i/bg100330_x2.jpg) repeat-x bottom;border:1px solid #654688;margin-right:10px;display:inline;}
+.pageclass li a{color:#654688;padding:0 5px;line-height:19px;display:block;}
+.pageclass li a:hover,.pageclass li.on a{color:#fff;font-weight:bolder;background: url(../i/bg100330_x2.jpg) repeat-x top;text-decoration:none;}
+
+/*== story_left ==*/
+.story_left .box{float:left;width:670px; margin-top:10px;}
+.story_left .box h2{float:left;width:640px;padding:0 15px;height:25px;background:url(../i/bg100330_h2.jpg) no-repeat;line-height:25px;border-bottom:1px solid #E6DCED;}
+.story_left .box h2 span{float:right;}
+.story_left .box .content{float:left;width:668px;border-right:1px solid #D8CAE4;border-left:1px solid #D8CAE4;}
+.story_left .box .contentin{float:left;width:666px;border:1px solid #fff;border-bottom:0;background:url(../i/bg100330_x1.jpg) repeat-x top;}
+
+/*== story_right ==*/
+.story_right .box{float:left;width:250px;margin-top:10px;overflow:hidden;}
+.story_right .box h3{float:left;width:235px;padding:0 15px 0 0;height:25px;background:url(../i/bg100330_h2.jpg) no-repeat right;line-height:25px;border-bottom:1px solid #E6DCED;}
+.story_right .box h3 em{float:left;width:15px;height:25px;overflow:hidden;background:url(../i/bg100330_h2.jpg) no-repeat left;}
+.story_right .box h3 span{float:right;}
+.story_right .box .content{float:left;width:248px;border-right:1px solid #D8CAE4;border-left:1px solid #D8CAE4;}
+
+/*== for words ==*/
+.story_left p.words{float:left;width:628px;padding:10px;border-bottom:1px dashed #666666;margin:0 10px;display:inline;}
+.story_left p.words img{float:left;width:65px;height:80px;}
+.story_left p.words span{float:left;width:550px;line-height:22px;padding-left:13px;}
+#fbzf{float:left;width:628px;padding:20px 20px 0;}
+#fbzf p.zcyx{position:relative;width:500px;top:-20px;left:70px;}
+#fbzf .inputstyle1{width:100px;height:16px;margin:0 4px;border:1px solid #ccc;}
+#fbzf .inputstyle2{width:68px;height:18px;margin:0 4px;border:1px solid #ccc;}
+#fbzf a#go{text-align:center;display:block;width:45px;height:19px;line-height:19px;*line-height:22px;color:#BD018C;margin:-20px 0 0 310px;border:1px solid #E684B7;overflow:hidden;}
+#fbzf a#ljzc{text-align:center;display:block;width:55px;height:19px;line-height:19px;*line-height:22px;color:#045B6C;margin:-21px 0 0 366px;border:1px solid #5EC0D9;overflow:hidden;}
+#fbzf textarea{width:600px;height:80px;padding:3px;background:#F2EFF7;border:1px solid #D0C2E0;font-size:12px;margin-top:-10px;}
+#fbzf .yzfb{float:left;margin:10px 0 0;}
+#fbzf a.a5,#fbzf a.a5:hover{width:50px;background:url(../i/bg100330_01.png) no-repeat -121px -285px;position:relative;top:-20px;left:210px;}
+
+
+/*== 相关文章 ==*/
+.content_like {width:100%; padding:10px 0 0 0; overflow:hidden;}
+.content_like li {width:139px; text-align:center; margin:0 14px; float:left; display:inline;}
+.content_like li span {display:block; margin:5px 0 0 0;}
+.content_like img {width:131px; height:96px; padding:3px; border:1px #D8CAE4 solid;}
+.content_like li a:link,.content_like li a:visited {color:#636363;}
+
+/*== tags ==*/
+.tags {padding:10px 10px 5px 15px;}
+.tags a {margin:0 5px 0 0; line-height:1.6; font-size:14px;}

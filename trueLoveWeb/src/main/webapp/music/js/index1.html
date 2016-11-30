@@ -1,0 +1,134 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>jQuery制作的下拉选项菜单 - 站长素材</title>
+<link rel="stylesheet" type="text/css" href="css/main.css" />
+<link rel="stylesheet" href="css/stylesheets/style.css">
+<script src="js/jquery-1.7.2.min.js"></script>
+<style type="text/css">
+#dropdown{width:38px; margin:0,90px,auto; position:relative;font-size:12px;}
+#dropdown p{width:45px; height:24px; line-height:24px; border:1px solid #a9c9e2; background:#00A5F1 url(arrow.gif) no-repeat right 4px; color:#807a62; cursor:pointer;font-size:12px;}
+#dropdown ul{width:60px; background:#e8f5fe; margin-top:2px; border:1px solid #a9c9e2; position:absolute; display:none}
+#dropdown ul li{height:24px; line-height:24px; text-indent:10px}
+#dropdown ul li a{display:block; height:24px; color:#807a62; text-decoration:none}
+#dropdown ul li a:hover{background:#c6dbfc; color:#369}
+#result{margin-top:10px;text-align:center}
+
+
+.header {
+	font-size: 12px;
+	font-weight:bold;
+}
+.header,.link{
+	color: #FFF;
+}
+table tr td:hover{
+	background-color:#05348E;
+	color:#FFF;
+}
+table tr td{
+	width:15px;
+}
+
+</style>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jQuery1.9.1.js"></script>
+</head>
+
+<body>
+
+<div id="main">
+  <div id="dropdown">
+      <center><p><a href="#" class="link" style="color:#fff">皮肤</a></p></center>
+      <ul>
+         <li><a href="#" rel="1">经典蓝</a></li>
+         <li><a href="#" rel="2">爵士绿</a></li>
+         <li><a href="#" rel="3">优雅红</a></li>
+         <li><a href="#" rel="4">冷酷灰</a></li>
+      </ul>
+  </div></div>
+
+
+<div id="player">
+	<center>
+	<div>
+ 	 <table width="65%" border="0" align="center" cellspacing="0">
+  	<tr align="center" class="header">
+  	  <td><a href="#" class="link">乐库</a></td>
+  	  <td><a href="#" class="link">电台</a></td>
+  	  <td><a href="#" class="link">歌单</a></td>
+  	  <td><a href="#" class="link">MV</a></td>
+   	  <td><a href="#" class="link">直播</a></td>
+ 	 </tr>
+	</table>
+	</div>	
+	</center>	
+	<div class="cover"></div>
+
+	<div class="ctrl">
+		<div class="tag">
+			<strong>Title</strong>
+			<span class="artist">Artist</span>
+			<span class="album">Album</span>
+		</div>
+		<div class="control">
+			<div class="left">
+				<div class="rewind icon"></div>
+				<div class="playback icon"></div>
+				<div class="fastforward icon"></div>
+			</div>
+			<div class="volume right">
+				<div class="mute icon left"></div>
+				<div class="slider left">
+					<div class="pace"></div>
+				</div>
+			</div>
+		</div>
+		<div class="progress">
+			<div class="slider">
+				<div class="loaded"></div>
+				<div class="pace"></div>
+			</div>
+			<div class="timer left">0:00</div>
+			<div class="right">
+				<div class="repeat icon"></div>
+				<div class="shuffle icon"></div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<ul id="playlist">播放列表</ul>
+<script src="js/jquery-ui-1.8.17.custom.min.js"></script>
+<script src="js/script.js"></script>
+<div style="text-align:center;margin:50px 0; font:normal 14px/24px 'MicroSoft YaHei';">
+<p>适用浏览器：IE8、360、FireFox、Chrome、Safari、Opera、傲游、搜狗、世界之窗. </p>
+<p>来源：<a href="http://sc.chinaz.com/" target="_blank">站长素材</a></p>
+</div>
+
+</body>
+<script type="text/javascript">
+$(function(){
+	$("#dropdown p").click(function(){
+		var ul = $("#dropdown ul");
+		if(ul.css("display")=="none"){
+			ul.slideDown("fast");
+		}else{
+			ul.slideUp("fast");
+		}
+	});
+	$("#dropdown ul li a").click(function(){
+		var txt = $(this).text();
+		$("#dropdown p").html(txt);
+		var value = $(this).attr("rel");
+		
+		if(value==1){
+			document.body.bgColor="#00A5F1";
+		}
+	});
+	
+});
+
+</script>
+</html>

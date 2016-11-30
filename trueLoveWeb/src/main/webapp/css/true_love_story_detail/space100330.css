@@ -1,0 +1,50 @@
+.story_all .spacebanner{float:left;width:930px;height:100px;overflow:hidden;}
+.spacebanner p.p1{position:relative;top:-80px;left:33px;height:20px;}
+.spacebanner p.p2{position:relative;top:-60px;left:43px;}
+
+.story_right .box1{padding-top:5px;background:url(../i/bg100330_05.jpg) no-repeat top;font-size:14px;}
+.story_right p.con{width:218px;padding:10px 15px 0;line-height:22px;}
+.story_right p.con14{width:218px;padding:10px 15px 0;line-height:22px;font-size:14px;}
+.story_right p.conr{width:218px;padding:0 15px;line-height:22px;text-align:right;}
+.story_right p.btn a,.story_right p.btn a:hover{float:right;margin:0 64px 5px 0;display:inline;width:120px;background:url(../i/bg100330_01.png) no-repeat 0 -285px;}
+.story_right ul.con{width:248px;padding:10px 0 0;height:132px;line-height:22px;overflow:hidden;background:#fff;}
+.story_right ul.con li{float:left;width:210px;height:22px;overflow:hidden;padding:0 10px 0 28px;background:url(../i/bg100330_01.png) no-repeat -230px -136px;}
+.story_right ul.sex{width:228px;padding:10px 10px 0;line-height:22px;}
+.story_right ul.sex li{float:left;width:190px;height:22px;overflow:hidden;padding:0 10px 0 28px;background:url(../i/bg100330_01.png) no-repeat -228px -184px;}
+.story_right ul.sex li.f{background:url(../i/bg100330_01.png) no-repeat -228px -162px;}
+.story_right dl.zrg{float:left;width:230px;height:288px;padding:0 10px;background:url(../i/bg100330_06.png) no-repeat;}
+.story_right dl.zrg dd{float:left;width:230px;height:100px;margin-top:10px;overflow:hidden;line-height:18px;}
+.story_right dl.zrg dd img{float:left;width:65px;height:80px;margin-right:10px;}
+.story_right dl.zrg dt{float:left;width:230px;font-size:14px;font-weight:bold;text-align:center;margin-top:10px;line-height:24px;color:#fff;}
+.story_right dl.zrg dt span{color:#FFFF00;font-size:16px;}
+
+.story_left .aqgs .content{padding:5px 0;}
+.story_left .aqgs .contentlist{float:left;width:628px;margin:0 20px;display:inline;padding:10px 0;border-bottom:1px dashed #666666;}
+.story_left .aqgs p{float:left;width:628px;line-height:24px;font-size:14px;}
+.story_left .aqgs p span{float:right;}
+.story_left .aqgscon{float:left;}
+.story_left .aqgscon p{text-indent:28px;}
+
+#tbody{float:left;width:668px;height:540px;overflow:hidden;background:url(../i/bg100330_07.png) no-repeat 0 0;}
+#b_box{float:left;width:668px;height:395px;overflow:hidden;margin-top:14px;}
+#mainbody{width:500px;height:375px;padding:10px 84px;overflow:hidden;}
+#mainphoto{cursor:pointer;}
+#s_box{float:left;width:618px;height:91px;margin:24px 25px 0;display:inline;}
+#goleft{float:left;clear:left;margin-top:8px;width:35px;height:83px;overflow:hidden;cursor:pointer;}
+#goright{float:right;clear:right;margin-top:8px;width:35px;height:83px;overflow:hidden;cursor:pointer;}
+#photosbg{float:left;width:548px;height:91px;overflow:hidden;}
+#photos{float:left;width:548px;height:91px;overflow:hidden;}
+#showArea span{float:left;display:block;width:100px;height:75px;padding:12px 19px 4px 18px;overflow:hidden;background:url(../i/photosbg.gif) no-repeat 15px -92px;}
+#showArea span table{width:100px;height:75px;overflow:hidden;}
+#showArea img{cursor:pointer;}
+#showArea span.imgon{background:url(../i/photosbg.gif) no-repeat 15px 0;}
+.goleft_s{background:url(../i/photosbg.gif) no-repeat 0 -272px;;}
+.goleft_s_over{background:url(../i/photosbg.gif) no-repeat -35px -272px;}
+.goleft_s_end{background:url(../i/photosbg.gif) no-repeat -70px -272px;;}
+.goright_s{background:url(../i/photosbg.gif) no-repeat 0 -188px;}
+.goright_s_over{background:url(../i/photosbg.gif) no-repeat -35px -188px;}
+.goright_s_end{background:url(../i/photosbg.gif) no-repeat -70px -188px;}
+
+#spanL{position:relative;top:-385px;left:84px;width:250px;height:375px;background:#fff;filter:alpha(Opacity=0);opacity:0;}
+#spanR{position:relative;top:-760px;left:334px;width:250px;height:375px;background:#fff;filter:alpha(Opacity=0);opacity:0;}
+

@@ -1,0 +1,12 @@
+a:link {color:#666;text-decoration:none;}
+a:hover {color:#E55C94 !important;text-decoration:none;} 
+a:visited {color:#666;text-decoration:none;}
+* {padding:0;margin:0;font-style:normal;}
+img,a img {border:0;}
+.clear {clear:both;height:0;overflow:hidden;float:none;}
+select {font-size:12px;}
+ul,ol {list-style:none;}
+input {font-size:12px;}
+body {width:100%;font-size:12px;padding:0;background:url(../images/bj1.jpg) repeat-x;}
+
+.zt_foot {width:950px;overflow:hidden;text-align:center;padding:20px 0;line-height:22px;color:#656766;margin:0 auto;}

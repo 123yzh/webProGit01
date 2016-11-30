@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<root>
+
+	
+		<pageGallery nameGallery="GALLERY 1" name="gallery1" line="3" maxImages="9">
+				<titleImages>				
+					<smallImages>_gallery_small_images_1.jpg</smallImages>
+					<titleVideo>26313-anim1.flv</titleVideo>
+				</titleImages>	
+			
+			
+				<titleImages>				
+					<smallImages>_gallery_small_images_2.jpg</smallImages>
+					<titleVideo>26313-anim2.flv</titleVideo>
+				</titleImages>	
+				
+				<titleImages>				
+					<smallImages>_gallery_small_images_3.jpg</smallImages>
+					<titleVideo>26313-anim3.flv</titleVideo>
+				</titleImages>	
+				
+				<titleImages>				
+					<smallImages>_gallery_small_images_4.jpg</smallImages>
+					<titleVideo>26313-anim4.flv</titleVideo>
+				</titleImages>	
+				
+				<titleImages>				
+					<smallImages>_gallery_small_images_5.jpg</smallImages>
+					<titleVideo>26313-anim5.flv</titleVideo>
+				</titleImages>	
+				
+				
+		            <titleImages>				
+					<smallImages>_gallery_small_images_6.jpg</smallImages>
+					<titleVideo>26313-anim6.flv</titleVideo>
+				</titleImages>	
+				
+                        <titleImages>				
+					<smallImages>_gallery_small_images_7.jpg</smallImages>
+					<titleVideo>26313-anim7.flv</titleVideo>
+				</titleImages>	
+				
+                         <titleImages>				
+					<smallImages>_gallery_small_images_8.jpg</smallImages>
+					<titleVideo>26313-anim8.flv</titleVideo>
+				</titleImages>	
+				
+                        <titleImages>				
+					<smallImages>_gallery_small_images_9.jpg</smallImages>
+					<titleVideo>26313-anim9.flv</titleVideo>
+				</titleImages>	
+				
+		
+						
+
+		</pageGallery>
+		
+		
+		
+		
+				
+
+</root>
