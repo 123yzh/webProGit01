@@ -3,19 +3,45 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <head>
 <meta content="text/html; charset=gb2312" http-equiv="Content-Type">
-
+<!-- 弹出层导入文件,注意弹出框文件不能在 -->
+<script src="js/window/js/jquery.min.js" type="text/javascript"></script>
+<!--start-->
+<link rel="stylesheet" type="text/css" href="css/window/css/style.css">
+<link rel="stylesheet" type="text/css"
+	href="js/window/js/lightbox/themes/default/jquery.lightbox.css" />
+<!--[if IE 6]>
+  <link rel="stylesheet" type="text/css" href="js/window/js/lightbox/themes/default/jquery.lightbox.ie6.css" />
+  <![endif]-->
+<script type="text/javascript"
+	src="js/window/js/lightbox/jquery.lightbox.min.js"></script>
+<script type="text/javascript">
+	jQuery(document).ready(function($) {
+		$('.lightbox').lightbox();
+	});
+</script>
+<!-- 弹出层导入文件 结束-->
+<!-- 自动下拉瀑布流js、css文件 -->
 <script type=text/javascript src="js/auto_dynamic_pic_down/jquery.js"></script>
 <script type=text/javascript src="js/auto_dynamic_pic_down/zzsc.js"></script>
 <link rel=stylesheet type=text/css
 	href="css/auto_dynamic_pic_down/zzsc.css">
-
+<!-- 自动下拉瀑布流js、css文件 结束-->
 <title></title>
 <style>
 #waterfall .dym img {
 	height: 146px;
 	width: 113px;
 }
+
+#ms01 {
+	opacity: 0;
+}
+
+#ms01:hover {
+	opacity: 0.5;
+}
 </style>
+
 </head>
 <body>
 	<!--代码开始,注意该插件的第0,13,15不能显示图片，因此只能强制插入图片-->
@@ -28,71 +54,124 @@
 	</div>
 
 	<div id="content"
-		style="height:430px; width: 528px; background-color: #EEE; border-radius: 10px; color: #F39; font-weight: bold; font-family: '仿宋'; font-style: italic;">
-	
+		style="height: 430px; width: 528px; background-color: #EEE; line-height: 17px; border-radius: 10px; color: #F39; font-weight: bold; font-family: '仿宋'; font-style: italic;">
+
 		<div id="waterfall" class="waterfall">
-		
-	<%
-			int count=0;
-			for(int i=0;i<4;i++){
-		%>
-			<div class="dym-dl">
+
 			<%
-				for(int m=0;m<4;m++){
+				int count = 0;
+				for (int i = 0; i < 4; i++) {
 			%>
-					<div class="dym">
-						<%
-							if(count==0){
-						%>
-							<img class="imgs" alt="1233" src="images/auto_dynamic_pic_down/17.jpg"/>
-							<div style="margin:0px 7px;">
-								<span><%="小翠"%></span>
-								<span><%="23岁"%></span>
-								<span><%="湖南"%></span>
-								<span><%="爱情宣言:将其爱情进行到底"%></span>
+			<div class="dym-dl">
+				<%
+					for (int m = 0; m < 4; m++) {
+				%>
+				<div class="dym">
+					<%
+						if (count == 0) {
+					%>
+					<!-- 外层"min"div是一个信息弹框 -->
+					<div class="min">
+						<a style="text-decoration: none;"
+							href="PeropleInformation.html?lightbox[iframe]=true&lightbox[width]=600&lightbox[height]=400"
+							class="lightbox" rel="group1"> <!--图片加上透明div层的属性-->
+							<div class="con_img" style="position: relative;">
+								<img class="imgs" alt="1233"
+									src="images/auto_dynamic_pic_down/17.jpg" /> <span id="ms01"
+									style="margin-left: 6px; margin-bottom: 8px; position: absolute; bottom: 0; left: 0; width: 90%; height: 90%; background: #CBBFAE;">
+									<div style="margin-left: 5px; margin-top: 50px; color: #000">点击查看资料</div>
+								</span>
 							</div>
-						<% 
-							}else if(count==13){
-						%>
-							<img class="imgs" alt="1233" src="images/auto_dynamic_pic_down/18.jpg"/>
-							<div style="margin:0px 7px;">
-								<span><%="小明"%></span>
-								<span><%="28岁"%></span>
-								<span><%="湖南"%></span>
-								<span><%="爱情宣言:将其爱情进行到底"%></span>
-							</div>
-						<%
-							}else if(count==15){
-						%>
-							<img class="imgs" alt="1233" src="images/auto_dynamic_pic_down/19.jpg"/>
-							<div style="margin:0px 7px;">
-								<span><%="张三"%></span>
-								<span><%="25岁"%></span>
-								<span><%="湖南"%></span>
-								<span><%="爱情宣言:将其爱情进行到底"%></span>
-							</div>	
-						<% 
-							}else{
-						%>
-							<img class="imgs" />
-							<div style="margin:0px 7px;">
-								<span><%="李四"%></span>
-								<span><%="29岁"%></span>
-								<span><%="湖南"%></span>
-								<span><%="爱情宣言:将其爱情进行到底"%></span>
-							</div>
-						<% 
-							}
-						%>
+						</a>
 					</div>
-				<% 
+					<!-- 任务基本信息 -->
+					<div style="margin: 0px 2px;">
+						<span><%="小翠"%></span> <span><%="23岁"%></span> <span><%="湖南"%></span>
+					</div>
+					<!-- 爱情宣言 -->
+					<div>
+						<span><%="爱情宣言:将爱情进行到底"%></span>
+					</div>
+					<%
+						} else if (count == 13) {
+					%>
+					<!-- 外层"min"div是一个信息弹框 -->
+					<div class="min">
+						<a style="text-decoration: none;"
+							href="PeropleInformation.html?lightbox[iframe]=true&lightbox[width]=600&lightbox[height]=400"
+							class="lightbox" rel="group1">
+							<div class="con_img" style="position: relative;">
+								<img class="imgs" alt="1233"
+									src="images/auto_dynamic_pic_down/18.jpg" /> <span id="ms01"
+									style="margin-left: 6px; margin-bottom: 8px; position: absolute; bottom: 0; left: 0; width: 90%; height: 90%; background: #CBBFAE;">
+									<div style="margin-left: 5px; margin-top: 50px; color: #000">点击查看资料</div>
+								</span>
+							</div>
+						</a>
+					</div>
+					<div style="margin: 0px 2px;">
+						<span><%="小明"%></span> <span><%="28岁"%></span> <span><%="湖南"%></span>
+					</div>
+					<div>
+						<span><%="爱情宣言:将爱情进行到底"%></span>
+					</div>
+					<%
+						} else if (count == 15) {
+					%>
+					<!-- 外层"min"div是一个信息弹框 -->
+					<div class="min">
+						<a style="text-decoration: none;"
+							href="PeropleInformation.html?lightbox[iframe]=true&lightbox[width]=600&lightbox[height]=400"
+							class="lightbox" rel="group1">
+							<div class="con_img" style="position: relative;">
+								<img class="imgs" alt="1233"
+									src="images/auto_dynamic_pic_down/19.jpg" /> <span id="ms01"
+									style="margin-left: 6px; margin-bottom: 8px; position: absolute; bottom: 0; left: 0; width: 90%; height: 90%; background: #CBBFAE;">
+									<div style="margin-left: 5px; margin-top: 50px; color: #000">点击查看资料</div>
+								</span>
+							</div>
+						</a>
+					</div>
+					<div style="margin: 0px 2px;">
+						<span><%="张三"%></span> <span><%="25岁"%></span> <span><%="湖南"%></span>
+					</div>
+					<div>
+						<span><%="爱情宣言:将其爱情进行到底"%></span>
+					</div>
+					<%
+						} else {
+					%>
+					<!-- 外层"min"div是一个信息弹框 -->
+					<div class="min">
+						<a style="text-decoration: none;"
+							href="PeropleInformation.html?lightbox[iframe]=true&lightbox[width]=600&lightbox[height]=400"
+							class="lightbox" rel="group1">
+							<div class="con_img" style="position: relative;">
+								<img class="imgs" /> <span id="ms01"
+									style="margin-left: 6px; margin-bottom: 8px; position: absolute; bottom: 0; left: 0; width: 90%; height: 90%; background: #CBBFAE;">
+									<div style="margin-left: 5px; margin-top: 50px; color: #000">点击查看资料</div>
+								</span>
+							</div>
+						</a>
+					</div>
+					<div style="margin: 0px 2px;">
+						<span><%="李四"%></span> <span><%="29岁"%></span> <span><%="湖南"%></span>
+					</div>
+					<div>
+						<span><%="爱情宣言:将其爱情进行到底"%></span>
+					</div>
+					<%
+						}
+					%>
+				</div>
+				<%
 					count++;
-				}
+						}
 				%>
 			</div>
-		<%
-			}
-		%>
+			<%
+				}
+			%>
 			<!-- 
 		<div class="dym-dl">
 			<div class="dym">
@@ -217,7 +296,6 @@
 	 -->
 		</div>
 	</div>
-
 </body>
 
 <script>
@@ -236,7 +314,7 @@
 
 	/*
 	 */
-	for (var i = 0; i <16; i++) {
+	for (var i = 0; i < 16; i++) {
 		document.getElementsByClassName("imgs")[i].setAttribute("id", i);
 	}
 	//获取img元素的id属性值
@@ -269,7 +347,7 @@
 	//alert(randomNum(temp01));
 
 	var url = null;
-	for (var i = 0; i <16; i++) {
+	for (var i = 0; i < 16; i++) {
 		url = "images/auto_dynamic_pic_down\/" + (temp[i]) + ".jpg";/*随机生成图片路径*/
 		//alert(url);
 		document.getElementById(i).src = url;

@@ -119,7 +119,10 @@
 		var actio = o("actio");
 		var pwd2 = o("password2");
 		var telphone = o('telphone');
-
+		/*
+			测试:
+		*/
+		///alert(workProvince.value);
 		if (mysex1.checked == false && mysex2.checked == false) {
 			alert('您忘记选择您的性别！');
 			return false;
