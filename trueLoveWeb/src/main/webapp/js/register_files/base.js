@@ -396,7 +396,7 @@ $(function () {
         });
 
     //随机显示
-    var random_int = $.generic_random(1, 61);
+   var random_int = $.generic_random(1, 61);
     $("#flashBg .i_box img[src='']").each(function () {
         var img = $(this);
         img.attr("src", "http://r.52callme.com/www/images/" + img.attr("type") + "/" + random_int + ".png");

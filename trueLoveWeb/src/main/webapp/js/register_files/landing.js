@@ -107,6 +107,7 @@
 
 
  // by lxh 2014.2.20
+        
         $(function () {
             var members = $('.membercont'), card = $('.membercard'), arrow = card.find('.arrow');
             members.delegate('li', 'click', function () {
@@ -133,7 +134,6 @@
                 card.stop().animate({ 'left': '10px' }, 300);
             });
         });
-
         function shake(ele, cls) {
             var i = 0, t = false, o = ele.attr("class") + " ", c = "";
             if (t) return;

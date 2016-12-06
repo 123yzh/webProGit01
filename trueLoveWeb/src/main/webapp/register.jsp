@@ -8,7 +8,7 @@
 <meta name="keywords" content="婚恋交友，网络征婚，爱约，专业红娘一对一牵线">
 <meta name="description"
 	content="爱约是华中地区成功率高的征婚网站，为单身男女提供免费一对一红娘服务!使天下有情人终成眷属。">
-
+	
 <script src="./js/register_files/jquery.js" type="text/javascript"></script>
 <script src="./js/register_files/jquery(1).js" type="text/javascript"></script>
 <script src="./js/register_files/regqq.js" type="text/javascript"></script>
@@ -17,6 +17,7 @@
 <script src="./js/register_files/xinde(1).js" type="text/javascript"></script>
 <script src="./js/register_files/xinn.js" type="text/javascript"></script>
 <script type="text/javascript" src="js/jquery.js"></script>
+
 <link type="text/css" rel="stylesheet"
 	href="./css/register_files/landing.css">
 <link type="text/css" rel="stylesheet"
@@ -33,6 +34,7 @@
 <!-- 
 <script src="./images/register_files/ProCities(1).js" type="text/javascript"></script>-->
 <script src="./js/register_files/landing.js" type="text/javascript"></script>
+
 <script type="text/javascript">
 	var l_current_pc = l_judge_current_pc2('10106000', '10106001') || [ 0, 1 ];
 	function o(id) {
@@ -73,6 +75,8 @@
 		}
 	}
 	function checkForm() {
+		var code = o("codeId");	
+	
 		var myreg = /^([a-zA-Z0-9]+[_|\_|\.]?)*[a-zA-Z0-9]+@([a-zA-Z0-9]+[_|\_|\.]?)*[a-zA-Z0-9]+\.[a-zA-Z]{2,3}$/;
 		var reg = /^1[3|5|8|4|9]\d{9}$/;
 
@@ -82,7 +86,7 @@
 		var tid = request('tid');
 		var wf = request('wf');
 		if (sid > 0 && st > 0) {
-			var action = $("#register_stepone").attr('action');
+			var action = $("#example1").attr('action');
 			action = action + '&st=' + st + '&sid=' + sid;
 
 			if (tid != '') {
@@ -93,12 +97,12 @@
 				action = action + '&wf=' + wf;
 			}
 
-			$("#register_stepone").attr('action', action);
+			$("#example1").attr('action', action);
 
 		}
 		/************ form end ssy *********************/
-
-		var email = o("email");
+		//alert(code);
+		var email = o("emailId");
 		var year = o("year");
 		var month = o("month");
 		var day = o("day");
@@ -119,29 +123,67 @@
 		var actio = o("actio");
 		var pwd2 = o("password2");
 		var telphone = o('telphone');
+		var uname = o("usernameId");//用户名
+		var pwd = o("upwd");//用户密码
+		var repwd = o("urepwd");//用户重置密码
+		//测试
+		/*
+			获得用户输入的值
+		 */
+		//获取性别
+		//var sex_value=$("#gender1").val();
+		//获取省份
+		//var workProvince_txt_value=$("#workprovincereg_txt").val();
+		//获取城市
+		//var workCity_txt_value=$("#workcity_txt").val();
+		//alert(sex_value+" "+workProvince_txt_value+" "+workCity_txt_value);
 		/*
 			测试:
-		*/
-		///alert(workProvince.value);
-		if (mysex1.checked == false && mysex2.checked == false) {
-			alert('您忘记选择您的性别！');
+				[1,0,'北京','bj',10102000],alert(_location[0][2]);
+		 */
+		if(uname.value==""){
+			alert("用户名不能为空!");
+			return false;//阻止继续运行
+		}else if(!(/^(([\u4e00-\u9fa5])+|[\w]+){2,16}$/).test(uname.value)){
+			alert("请输入2-16位字符的用户名!");
 			return false;
 		}
-		if (year.value == '-1' || year.value == '') {
+		if(pwd.value==''){
+			alert("密码不能为空!");
+			return false;
+			//匹配中文字符和非中文字符的字符型表达式
+		}else if(!(/^(([\u4e00-\u9fa5])+|[\w]+){6,16}$/).test(pwd.value)){
+			alert("请输入6-16位字符的密码!");
+			return false;
+		}
+		if(repwd.value==''){
+			alert("密码不能为空!");
+			return false;
+		}else if((repwd.value)!=(pwd.value)){
+			alert("密码前后不一致,请重输!");
+			return false;
+		}
+		
+		//if (mysex1.checked == false && mysex2.checked == false) {
+			//alert('您忘记选择您的性别！');
+			//return false;
+		//}
+		if (year.value == -1) {
 			alert("请选择出生日期！");
-			year_txt.focus();
+			//year_txt.focus();
 			return false;
 		}
-		if (month.value == '-1' || month.value == '') {
+		if (month.value == -1) {
 			alert("请选择出生日期！");
-			month_txt.focus();
+			//month_txt.focus();
 			return false;
 		}
-		if (day.value == '-1' || day.value == '') {
+		if (day.value == -1) {
 			alert("请选择出生日期！");
-			day_txt.focus();
+			//day_txt.focus();
 			return false;
 		}
+	
 
 		if (workProvince.value == '-1' && workCity.value == '-1') {
 			alert("您忘记选择'工作地区'这项了!");
@@ -163,51 +205,103 @@
 			}
 		}
 
-		// if (marriage.value == '-1' || marriage.value == '') {
-		//                     alert("请选择婚姻状况");
-		//                     marriage.focus();
-		//                     return false;
-		//                 }
-		//
-		//                 if (education.value == '' || education.value == '-1') {
-		//                     alert("请选择学历");
-		//                     education.focus();
-		//                     return false;
-		//                 }
-		//                 if (salary.value == '' || salary.value == '-1') {
-		//                     alert("请选择月收入");
-		//                     salary.focus();
-		//                     return false;
-		//                 }
-		//
-		//                 if (height.value == '-1' || height.value == '') {
-		//                     alert("请选择身高选项");
-		//                     height.focus();
-		//                     return false;
-		//                 }
+		if (marriage.value == '-1' || marriage.value == '') {
+			alert("请选择婚姻状况");
+			marriage.focus();
+			return false;
+		}
+
+		if (education.value == '' || education.value == '-1') {
+			alert("请选择学历");
+			education.focus();
+			return false;
+		}
+		if (height.value == '-1' || height.value == '') {
+			alert("请选择身高选项");
+			height.focus();
+			return false;
+		}
+		if (salary.value == '' || salary.value == '-1') {
+			alert("请选择月收入");
+			salary.focus();
+			return false;
+		}
+
+		if (telphone.value == ""||telphone.value=="该号码已被其他用户绑定") {
+			alert("手机号不能为空！");
+			telphone.focus();
+			return false;
+		}
+		
 		if (!chk_phone1(telphone.value)) {
 			alert("请输入真实的手机号！");
 			return false;
 		}
-		// if (email.value == "") {
-		//                     alert("注册邮箱不能为空！");
-		//                     email.focus();
-		//                     return false;
-		//                 }
-		//                 if (email.value.indexOf('@') < 0) {
-		//                     alert("请输入正确的邮箱地址！");
-		//                     email.focus();
-		//                     return false;
-		//                 }
+		
+		if (email.value == ""||email.value=="该邮箱已被其他用户绑定") {
+			alert("注册邮箱不能为空！");
+			email.focus();
+			return false;
+		}
+		/*if (email.value.indexOf('@') < 0) {
+			alert("请输入正确的邮箱地址！");
+			email.focus();
+			return false;
+		}*/
+		
+		
+		if (code.value == '') {
+			alert("验证码不能为空");
+			code.focus();
+			return false;
+		}
+		
+		if(checkCode()!=code.value){//检验用户输入验证码与后台产生的验证码是否相等
+			//alert("验证码为:"+checkCode());
+			alert("验证码输入错误!");
+			return false;//首先调用函数
+		}
 		ispop = false;
-		$("#register_stepone").submit();
+		$("#example1").submit();//提交表单
 		return true;
 	}
+
+	
+	//1,=验证码一致判断、而是手机邮箱已注册判断。手机短信如何做？
+	//name?获取null问题？
 </script>
+
+<!-- 邮箱后置自动补全css和js文件 导入-->
+<link href="css/autoShow_email_list/sucaijiayuan.css" type="text/css"
+	rel="stylesheet" />
+<script src="js/autoShow_email_list/jquery.min.js"></script>
+<script src="js/autoShow_email_list/emailAutoComplete.js"></script>
+<!-- 邮箱后置自动补全css和js文件 导入结束 -->
+
+<!-- 导入注册验证文件 -->
+<script type="text/javascript" src="js/register_files/user_reg.js"></script>
+
+
+<!-- 气泡提示插件 导入文件-->
+<link rel="stylesheet" type="text/css" media="screen"
+	href="css/register_prove_css/reset.css" />
+<link rel="stylesheet" type="text/css" media="screen"
+	href="css/register_prove_css/jquery.ketchup.css" />
+<link rel="stylesheet" type="text/css" media="screen"
+	href="css/register_prove_css/main.css" />
+<script type="text/javascript" src="js/register_prove_js/jquery.min.js"></script>
+<script type="text/javascript"
+	src="js/register_prove_js/jquery.ketchup.js"></script>
+<script type="text/javascript"
+	src="js/register_prove_js/jquery.ketchup.messages.js"></script>
+<script type="text/javascript"
+	src="js/register_prove_js/jquery.ketchup.validations.basic.js"></script>
+<script type="text/javascript" src="js/register_prove_js/main.js"></script>
+
+<!-- 气泡提示插件文件导入结束 -->
 </head>
 
-<body>
-
+<body>	
 	<table id="Table_01" width="1429" height="870" border="0"
 		cellpadding="0" cellspacing="0">
 		<tbody>
@@ -259,7 +353,7 @@
 					height="587" alt=""></td>
 				<td colspan="4" rowspan="7"><img
 					src="./images/register_files/register_14.jpg" width="551"
-					height="534" alt=""></td>
+					height="534" alt="" style="margin-top: -40px;"></td>
 				<td rowspan="8"><img
 					src="./images/register_files/register_15.png" width="2"
 					height="538" alt=""></td>
@@ -282,13 +376,47 @@
 					<div width="400" height="320" alt="">
 
 						<div id="pnlError" class="landing_err"></div>
-						<!--注册页面的-->
-						<div class="reg_li" style="height: 100%; margin-top: -130px">
-							<form action="getValue.html?" method="post"
-								name="register_stepone" id="register_stepone">
+						<!--  -->
+						<form action="Register" method="post" id="example1" name="register_stepone" >
+						
+							<!-- id="register_stepone"  style="font-size:14px;font-family:'仿宋'" -->
+							<div style="margin-top:80px;">
+							<div style="clear:both" id="div01">
+							
+							<strong
+								style="margin-top: -170px; margin-left: 55px; position: absolute;font-weight:200">用户名</strong>
+								<input  name="uname" type="text"  id="usernameId" class="validate(required,matchUser,minlengthUser,maxlength)" style="border-radius: 5px; width: 180px; margin-top: -170px; margin-left: 115px; position: absolute;" />
+							
+							</div>
+							
+							<div style="clear:both">
+							<strong
+								style="margin-top: -140px; margin-left: 55px; position: absolute;font-weight:200">密码</strong>
+							<input type="password" class="validate(required,matchPwd,minlength,maxlength)" id="upwd" name="upwd" style="border-radius: 5px; width: 180px; margin-top: -140px; margin-left: 115px; position: absolute;" />
+							</div>
+							
+							<div style="clear:both">
+							<strong
+								style="margin-top: -110px; margin-left:55px; position: absolute;font-weight:200">确认密码</strong>
+								<input type="password" class="validate(required,matchRePwd)" id="urepwd" name="urepwd" style="border-radius: 5px; width: 180px; margin-top: -110px; margin-left: 115px; position: absolute;" />
+							</div>
+							</div>
+							<!--注册页面的-->
+							<div class="reg_li" style="height: 100%; margin-top: -90px">
 								<ul>
+									<li
+										style="z-index: 93; border-bottom: 1px dotted #ccc; margin-bottom: 6px;">
+										<!--  <strong>
+											用户名 </strong>  消除图片改id 
+				
+											<input type="text" tabindex="1"
+										placeholder="请输入用户名" onfocus="javascript:this.value='';"
+										name="uname" id="usernameId" class="validate(required, username)  style="border-radius:5px;width:185px;">
+										-->
+									</li>
+									<!-- class="inputl" -->
 									<li class="ss"
-										style="height: 50px; border-bottom: 1px dotted #ccc; margin: 5px;">
+										style="height: 30px; border-bottom: 1px dotted #ccc; margin: 5px;">
 										<strong> 您的性别 </strong>
 										<div class="div">
 
@@ -298,23 +426,25 @@
 										</div>
 									</li>
 									<li class="ss"
-										style="height: 50px; border-bottom: 1px dotted #ccc; margin: 5px;">
+										style="height: 30px; border-bottom: 1px dotted #ccc; margin: 5px;">
 										<strong> 出生日期 </strong> <input name="year" id="year"
-										value="1984" type="hidden"> <input name="month"
-										id="month" value="04" type="hidden"> <input name="day"
-										id="day" value="17" type="hidden"> <input
-										name="year_txt" id="year_txt" onfocus="d_date(year_txt);"
-										class="inputs" style="width: 60px; margin-right: 3px;"
+										value="-1" type="hidden" style="border-radius: 5px;">
+										<input name="month" id="month" value="-1" type="hidden"
+										style="border-radius: 5px;"> <input name="day"
+										id="day" value="-1" type="hidden" style="border-radius: 5px;">
+										<input name="year_txt" id="year_txt"
+										onfocus="d_date(year_txt);" class="inputs"
+										style="width: 60px; border-radius: 5px; margin-right: 3px;"
 										readonly="true" type="text"> - <input name="month_txt"
 										id="month_txt" onfocus="d_date(month_txt);" class="inputs"
-										style="width: 40px; margin: 0px 3px;" readonly="true"
-										type="text"> - <input name="day_txt" id="day_txt"
-										onfocus="d_date(day_txt);" class="inputs"
-										style="width: 40px; margin-left: 3px;" readonly="true"
-										type="text">
+										style="width: 40px; border-radius: 5px; margin: 0px 3px;"
+										readonly="true" type="text"> - <input name="day_txt"
+										id="day_txt" onfocus="d_date(day_txt);" class="inputs"
+										style="width: 40px; border-radius: 5px; margin-left: 3px;"
+										readonly="true" type="text">
 									</li>
 									<li class="ss"
-										style="height: 50px; border-bottom: 1px dotted #ccc; margin: 5px;">
+										style="height: 30px; border-bottom: 1px dotted #ccc; margin: 5px;">
 										<strong> 工作地点 </strong> <script type="text/javascript">
 											document.write(_message_box);
 											<!---->
@@ -606,60 +736,35 @@
 												</div>
 											</div>
 										</div> <input name="workprovincereg" id="workprovincereg" value=""
-										type="hidden"> <input name="workcity" id="workcity"
-										value="" type="hidden"> <input
+										type="hidden" style="border-radius: 5px;"> <input
+										name="workcity" id="workcity" value="" type="hidden"
+										style="border-radius: 5px;"> <input
 										name="workprovincereg_txt" id="workprovincereg_txt" value=""
 										onfocus="l_location(workprovincereg_txt);" class="inputs"
-										style="width: 80px;" readonly="true" type="text"> <input
-										name="workcity_txt" id="workcity_txt" value=""
-										onfocus="l_location(workcity_txt);" class="inputs"
-										style="width: 80px; margin-left: 5px;" readonly="true"
-										type="text">
+										style="width: 80px; border-radius: 5px;" readonly="true"
+										type="text"> <input name="workcity_txt"
+										id="workcity_txt" value="" onfocus="l_location(workcity_txt);"
+										class="inputs"
+										style="width: 80px; margin-left: 5px; border-radius: 5px;"
+										readonly="true" type="text">
 									</li>
-									<!-- <li style="z-index:98;">
-				                                <strong>
-				                                    婚姻状况
-				                                </strong>
-				                                <select name="marriage" id="marriage">
-				                                    <option value="-1">
-				                                        请选择
-				                                    </option>
-				                                    <option value="1">
-				                                        未婚
-				                                    </option>
-				                                    <option value="3">
-				                                        离异
-				                                    </option>
-				                                    <option value="4">
-				                                        丧偶
-				                                    </option>
-				                                </select>
-				                            </li>
-				                            <li style="z-index:97;">
-				                                <strong>
-				                                    最高学历
-				                                </strong>
-				                                <select name="education" id="education">
-				                                    <option value="-1">
-				                                        请选择
-				                                    </option>
-				                                    <option value="3">
-				                                        高中及以下
-				                                    </option>
-				                                    <option value="4">
-				                                        大专
-				                                    </option>
-				                                    <option value="5">
-				                                        大学本科
-				                                    </option>
-				                                    <option value="6">
-				                                        硕士
-				                                    </option>
-				                                    <option value="7">
-				                                        博士
-				                                    </option>
-				                                </select>
-				                            </li>
+									<li style="z-index: 98;"><strong> 婚姻状况 </strong> <select
+										name="marriage" id="marriage" style="border-radius: 5px;">
+											<option value="-1">请选择</option>
+											<option value="0">未婚</option>
+											<option value="1">离异</option>
+											<option value="2">丧偶</option>
+									</select></li>
+									<li style="z-index: 97;"><strong> 最高学历 </strong> <select
+										name="education" id="education" style="border-radius: 5px;">
+											<option value="-1">请选择</option>
+											<option value="0">高中及以下</option>
+											<option value="1">大专</option>
+											<option value="2">大学本科</option>
+											<option value="3">硕士</option>
+											<option value="4">博士</option>
+									</select></li>
+									<!-- 
 				                            <li style="z-index:96;">
 				                                <strong>
 				                                    月 收 入
@@ -697,194 +802,144 @@
 				                                    </option>
 				                                </select>
 				                            </li>
-				                            <li style="z-index:95;">
-				                                <strong>
-				                                    身 高
-				                                </strong>
-				                                <select name="height" id="height">
-				                                    <option value="-1">
-				                                        请选择
-				                                    </option>
-				                                    <option value="154">
-				                                        155以下
-				                                    </option>
-				                                    <option value="155">
-				                                        155
-				                                    </option>
-				                                    <option value="156">
-				                                        156
-				                                    </option>
-				                                    <option value="157">
-				                                        157
-				                                    </option>
-				                                    <option value="158">
-				                                        158
-				                                    </option>
-				                                    <option value="159">
-				                                        159
-				                                    </option>
-				                                    <option value="160">
-				                                        160
-				                                    </option>
-				                                    <option value="161">
-				                                        161
-				                                    </option>
-				                                    <option value="162">
-				                                        162
-				                                    </option>
-				                                    <option value="163">
-				                                        163
-				                                    </option>
-				                                    <option value="164">
-				                                        164
-				                                    </option>
-				                                    <option value="165">
-				                                        165
-				                                    </option>
-				                                    <option value="166">
-				                                        166
-				                                    </option>
-				                                    <option value="167">
-				                                        167
-				                                    </option>
-				                                    <option value="168">
-				                                        168
-				                                    </option>
-				                                    <option value="169">
-				                                        169
-				                                    </option>
-				                                    <option value="170">
-				                                        170
-				                                    </option>
-				                                    <option value="171">
-				                                        171
-				                                    </option>
-				                                    <option value="172">
-				                                        172
-				                                    </option>
-				                                    <option value="173">
-				                                        173
-				                                    </option>
-				                                    <option value="174">
-				                                        174
-				                                    </option>
-				                                    <option value="175">
-				                                        175
-				                                    </option>
-				                                    <option value="176">
-				                                        176
-				                                    </option>
-				                                    <option value="177">
-				                                        177
-				                                    </option>
-				                                    <option value="178">
-				                                        178
-				                                    </option>
-				                                    <option value="179">
-				                                        179
-				                                    </option>
-				                                    <option value="180">
-				                                        180
-				                                    </option>
-				                                    <option value="181">
-				                                        181
-				                                    </option>
-				                                    <option value="182">
-				                                        182
-				                                    </option>
-				                                    <option value="183">
-				                                        183
-				                                    </option>
-				                                    <option value="184">
-				                                        184
-				                                    </option>
-				                                    <option value="185">
-				                                        185
-				                                    </option>
-				                                    <option value="186">
-				                                        186
-				                                    </option>
-				                                    <option value="187">
-				                                        187
-				                                    </option>
-				                                    <option value="188">
-				                                        188
-				                                    </option>
-				                                    <option value="189">
-				                                        189
-				                                    </option>
-				                                    <option value="190">
-				                                        190
-				                                    </option>
-				                                    <option value="191">
-				                                        191
-				                                    </option>
-				                                    <option value="192">
-				                                        192
-				                                    </option>
-				                                    <option value="193">
-				                                        193
-				                                    </option>
-				                                    <option value="194">
-				                                        194
-				                                    </option>
-				                                    <option value="195">
-				                                        195
-				                                    </option>
-				                                    <option value="196">
-				                                        196
-				                                    </option>
-				                                    <option value="197">
-				                                        197
-				                                    </option>
-				                                    <option value="198">
-				                                        198
-				                                    </option>
-				                                    <option value="199">
-				                                        199
-				                                    </option>
-				                                    <option value="200">
-				                                        200
-				                                    </option>
-				                                    <option value="201">
-				                                        200以上
-				                                    </option>
-				                                </select>
-				                                厘米
-				                            </li> -->
-									<li style="z-index: 96;"><strong> 月 收 入 </strong> <select
-										name="salary" id="salary">
+				                             -->
+									<li style="z-index: 95;"><strong> 身 高 </strong> <select
+										name="height" id="height" style="border-radius: 5px;">
 											<option value="-1">请选择</option>
-											<option value="1">1000元以下</option>
-											<option value="2">1001-2000元</option>
-											<option value="3">2001-3000元</option>
-											<option value="4">3001-5000元</option>
-											<option value="5">5001-8000元</option>
-											<option value="6">8001-10000元</option>
-											<option value="7">10001-20000元</option>
-											<option value="8">20001-50000元</option>
-											<option value="9">50000元以上</option>
+											<option value="154">155以下</option>
+											<option value="155">155</option>
+											<option value="156">156</option>
+											<option value="157">157</option>
+											<option value="158">158</option>
+											<option value="159">159</option>
+											<option value="160">160</option>
+											<option value="161">161</option>
+											<option value="162">162</option>
+											<option value="163">163</option>
+											<option value="164">164</option>
+											<option value="165">165</option>
+											<option value="166">166</option>
+											<option value="167">167</option>
+											<option value="168">168</option>
+											<option value="169">169</option>
+											<option value="170">170</option>
+											<option value="171">171</option>
+											<option value="172">172</option>
+											<option value="173">173</option>
+											<option value="174">174</option>
+											<option value="175">175</option>
+											<option value="176">176</option>
+											<option value="177">177</option>
+											<option value="178">178</option>
+											<option value="179">179</option>
+											<option value="180">180</option>
+											<option value="181">181</option>
+											<option value="182">182</option>
+											<option value="183">183</option>
+											<option value="184">184</option>
+											<option value="185">185</option>
+											<option value="186">186</option>
+											<option value="187">187</option>
+											<option value="188">188</option>
+											<option value="189">189</option>
+											<option value="190">190</option>
+											<option value="191">191</option>
+											<option value="192">192</option>
+											<option value="193">193</option>
+											<option value="194">194</option>
+											<option value="195">195</option>
+											<option value="196">196</option>
+											<option value="197">197</option>
+											<option value="198">198</option>
+											<option value="199">199</option>
+											<option value="200">200</option>
+											<option value="201">200以上</option>
+									</select> 厘米</li>
+									<li style="z-index: 96;"><strong> 月 收 入 </strong> <select
+										name="salary" id="salary" style="border-radius: 5px;">
+											<option value="-1">请选择</option>
+											<option value="0">1000元以下</option>
+											<option value="1">1001-2000元</option>
+											<option value="2">2001-3000元</option>
+											<option value="3">3001-5000元</option>
+											<option value="4">5001-8000元</option>
+											<option value="5">8001-10000元</option>
+											<option value="6">10001-20000元</option>
+											<option value="7">20001-50000元</option>
+											<option value="8">50000元以上</option>
 									</select></li>
+									
+									<li
+											style="height: 4px; border-bottom: 1px dotted #ccc; margin: 5px;">
+									</li>
+									<li
+										style="height: 20px; border-bottom: 1px dotted #ccc; margin: 5px;">
+									</li>
+									
+									<!-- 
 									<li
 										style="height: 50px; border-bottom: 1px dotted #ccc; margin: 5px;">
 										<strong> 手机号码 </strong> <input type="text" tabindex="4"
-										title="红娘为您牵线搭桥，成就您的美满爱情" value="填入手机号码免费获取登录密码"
+										title="红娘为您牵线搭桥，成就您的美满爱情" placeholder="请输入手机号"
 										onfocus="javascript:this.value=''" name="telphone"
-										id="telphone" class="inputl"> <!--<span id="validatetelphoneID">-->
-										</span>
+										id="telphone" class="inputl"
+										style="width: 185px; border-radius: 5px;">
 									</li>
-									<!-- <li style="z-index:93;">
-				                                <strong>
-				                                    注册邮箱
-				                                </strong>
-				                                <input type="text" tabindex="1" value="作为登录用户名及找回密码使用" title="此邮箱将成为您日后找回密码的途径之一" onfocus="javascript:this.value='';"
-				                                name="username" id="email" class="inputl">
-				                                <span id="validateemailID">
-				                                </span>
-				                            </li> -->
+									-->
+									<li style="z-index: 93; margin-left: 5px;"><strong>
+											注册邮箱 </strong> <!-- 消除图片改id --> <!-- 
+										<input type="text" tabindex="1" placeholder="请输入邮箱"
+										title="此邮箱将成为您日后找回密码的途径之一" onfocus="javascript:this.value='';"
+										name="email" id="emailId" class="inputl" style="width:185px;border-radius:5px;"> <span
+										id="validateemailID"> </span></li>
+									<span
+										style="width: 50px; position: absolute; margin-top: 420px; margin-left:-55px;">
+										<select name="email" id="emailLastName"
+										style="width: 90px; height: 27px;border-radius:5px;">
+											<option value="0">qq.com</option>
+											<option value="1">sina.com</option>
+											<option value="2">sina.com.cn</option>
+											<option value="3">yahoo.com</option>
+											<option value="4">hotmail.com</option>
+											<option value="5">21cn.com</option>
+											<option value="6">sohu.com</option>
+											<option value="7">sina.com</option>
+											<option value="8">263.com </option>
+											<option value="9">sina.com</option>
+											<option value="10">eyou.com </option>
+											<option value="11">188.com</option>
+									</select>
+									</span>
+									
+									onfocus="javascript:this.value='';"
+									onchange="checkEmailFunc(this.value)"
+									-->
+										<div class="parentCls" style="clear: both;">
+											<input class="inputElem" type="text" tabindex="1"
+												placeholder="请输入邮箱" title="此邮箱将成为您日后找回密码的途径之一"
+												 name="email"
+												id="emailId" class="inputl" 
+												style="width: 185px; border-radius: 5px; margin-top: -30px; margin-left: 13px; position: absolute;">
+										</div>
+										<!-- 隐藏技术
+										<div style="clear: both;">
+											<input id="emailId02" type="text" hidden="true"/>
+										</div>-->
 								</ul>
-
-								<input type="checkbox" value="1" checked="checked"
+							<ul>
+								<li
+											style="height: 5px; border-bottom: 1px dotted #ccc; margin: 5px;">
+								</li>
+							</ul>
+								<li style="z-index: 93; margin-bottom: 10px; margin-left: 5px;"><strong
+									style="width: 70px;">邮箱验证码 </strong> <input type="text"
+									tabindex="1" value="" onfocus="javascript:this.value='';"
+									name="code" id="codeId" class="inputl"
+									style="width: 60px; border-radius: 5px; position: absolute;">
+									<input onclick="sendCode()" id="code_button" type="button"
+									style="margin-left: 4px; background-color: #FF69B4; width: 125px; border-radius: 5px; height: 30px; margin-top: 2px; color: #FFF; font-family: '仿宋'; font-weight: bold; position: absolute; margin-left: 70px;"
+									value="请求验证码" /></li> <input type="checkbox" value="1"
+									checked="checked"
 									style="vertical-align: middle; margin-left: 10px; margin-top: 0px;"><span>&nbsp;已阅读和同意爱约的
 								</span>
 								<!-- http://www.i2299.com/index.php?n=myaccount&amp;h=serverrule -->
@@ -900,58 +955,59 @@
 								<input type="hidden" value="false" id="passmessage"> <input
 									type="hidden" value="false" id="emailmessage">
 
-							</form>
-						</div>
+							</div>
+							
+							<div>
+								<strong
+									style="margin-top: 205px; margin-left: -300px; position: absolute;font-weight:200">手机号</strong><input
+									type="text" tabindex="4" title="红娘为您牵线搭桥，成就您的美满爱情"
+									placeholder="请输入手机号" onfocus="javascript:this.value=''"
+									name="telphone" id="telphone"
+									style="width: 185px; border-radius: 5px; margin-top: 205px; margin-left: -245px; position: absolute;"
+									class="validate(required,number)">
+							</div>
+						</form>
+
+						<!-- </div>-->
+
 					</div>
 				</td>
 				<td><img src="./images/register_files/spacer.gif" width="1"
 					height="320" alt=""></td>
 			</tr>
 			<tr>
-				<td rowspan="2"><img
-					src="./images/register_files/register_19.png" width="74"
-					height="101" alt=""></td>
 				<td colspan="4">
-					<div style="width: 100%; height: 100%; background-color: #FFF">
+					<!-- background-color: #FFF-->
+					<div style="width: 100%; height: 100%;">
 						<input
-							style="width: 132px; height: 34px; margin-top: 48px; color: #FFF; font-size: 16px; font-weight: bold; margin-left: 60px; background: url(images/register_files/register_button.PNG) no-repeat; border: 0px; cursor: pointer;"
+						style="width: 202px; height: 42px; color: #FFF; font-size: 16px; font-weight: bold; margin-left: 65px; background: url(images/register_files/register_button.PNG) no-repeat; border: 0px; cursor: pointer;"
 							value="立即注册" type="button" onclick="checkForm()">
+				
+						</div>
 				</td>
-				</div>
-				<td rowspan="2"><img
-					src="./images/register_files/register_21.png" width="63"
-					height="101" alt=""></td>
 				<td><img src="./images/register_files/spacer.gif" width="1"
 					height="82" alt=""></td>
 			</tr>
 			<tr>
-				<td colspan="4"><img
-					src="./images/register_files/register_22.png" width="263"
-					height="19" alt=""></td>
+
 				<td><img src="./images/register_files/spacer.gif" width="1"
 					height="19" alt=""></td>
 			</tr>
 			<tr>
-				<td colspan="6" rowspan="2"><img
-					src="./images/register_files/register_23.png" width="400"
-					height="7" alt=""></td>
+
 				<td><img src="./images/register_files/spacer.gif" width="1"
 					height="3" alt=""></td>
 			</tr>
 			<tr>
-				<td colspan="4"><img
-					src="./images/register_files/register_24.png" width="551"
-					height="4" alt=""></td>
+
 				<td><img src="./images/register_files/spacer.gif" width="1"
 					height="4" alt=""></td>
 			</tr>
 			<tr>
-				<td colspan="2"><img
-					src="./images/register_files/register_25.png" width="256"
-					height="49" alt=""></td>
+
 				<td colspan="5"><img
 					src="./images/register_files/character.PNG" width="100%"
-					height="100%" /></td>
+					height="100%" style="margin-left: 110px;" /></td>
 				<td colspan="4"><img
 					src="./images/register_files/register_27.png" width="262"
 					height="49" alt=""></td>
@@ -1008,5 +1064,6 @@
 		</tbody>
 	</table>
 	<jsp:include page="WEB-INF/page/registerFooter.jsp"></jsp:include>
+
 </body>
 </html>

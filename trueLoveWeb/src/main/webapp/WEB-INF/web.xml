@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee"
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee"
 	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
 http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
 	id="WebApp_ID" version="3.0">
@@ -9,4 +10,62 @@ http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
 		<welcome-file>index.htm</welcome-file>
 		<welcome-file>index.jsp</welcome-file>
 	</welcome-file-list>
+
+
+	<servlet>
+		<!--给你的Servlet取名，任意的 -->
+		<servlet-name>register</servlet-name>
+		<!--指明sevlet的路径,(包名+类名) -->
+		<servlet-class>com.love.servlet.Register</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<!--给你的Servlet取名，同上 -->
+		<servlet-name>register</servlet-name>
+		<!--这是在浏览器中输入的访问该servlet的url，任意的 -->
+		<url-pattern>/Register</url-pattern>
+	</servlet-mapping>
+
+  <servlet>
+    <servlet-name>BasicServlet</servlet-name>
+    <servlet-class>com.love.servlet.mail.BasicServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>BasicServlet</servlet-name>
+    <url-pattern>/BasicServlets</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>SendMailServlet</servlet-name>
+    <servlet-class>com.love.servlet.mail.SendMailServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SendMailServlet</servlet-name>
+    <url-pattern>/SendMailServlets</url-pattern>
+  </servlet-mapping>
+
+	<servlet>
+		<servlet-name>CheckEmailServlet</servlet-name>
+		<servlet-class>com.love.servlet.email.CheckEmailServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>CheckEmailServlet</servlet-name>
+		<url-pattern>/checkEmailServlet</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>CheckPhoneServlet</servlet-name>
+		<servlet-class>com.love.servlet.telphone.CheckPhoneServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>CheckPhoneServlet</servlet-name>
+		<url-pattern>/checkPhoneServlet</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>UploadServlet</servlet-name>
+		<servlet-class>com.love.servlet.upload.UploadServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>UploadServlet</servlet-name>
+		<url-pattern>/uploadServlet</url-pattern>
+	</servlet-mapping>
 </web-app>
