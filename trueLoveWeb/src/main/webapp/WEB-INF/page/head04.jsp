@@ -93,14 +93,14 @@
             	<li><a href="index.jsp">首页</a></li>
                 <li><a href="myTrueLove.jsp">我的真缘</a></li>
                 <li><a href="club.jsp">俱乐部</a></li>
-				<li><a href="#">搜索</a></li>
+				<li><a href="index-search.jsp">搜索</a></li>
                 <li><a href="#">聊天吧</a></li>
-                <li><a href="#">新会员</a></li>
-				<li><a href="YueHui.jsp">约会吧</a></li>
+                <li><a href="new_users.jsp">新会员</a></li>
+				<li><a href="appoint_address.jsp">约会吧</a></li>
                 <li><a href="showHappiness.jsp">晒幸福</a></li>
                 <li><a href="true_love_story.jsp">真缘故事</a></li>
 				<li><a href="testYourLove.jsp">真缘测试</a></li>
-				<li><a href="testYourLove.jsp">红娘一对一</a></li>
+                <li><a href="#">红娘一对一</a></li>
             </ul>
         </div>
         

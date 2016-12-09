@@ -1,6 +1,7 @@
 package com.love.servlet;
 
 import java.io.IOException;
+
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -21,6 +22,7 @@ public class Register extends HttpServlet {
 			// 解决中文乱码的问题
 			resp.setContentType("text/html;charset=utf-8");
 			req.setCharacterEncoding("utf-8");
+			/*
 			// 定义薪水数组
 			String[] usex = { "男", "女" };
 			String[] sal = { "1000元以下", "1001-2000元", "2001-3000元",
@@ -59,6 +61,16 @@ public class Register extends HttpServlet {
 				//跳转界面
 				req.getRequestDispatcher("registerNext.jsp").forward(req, resp);
 			}
+	*/
+			/*搜索页面测试
+			String sex=req.getParameter("sex");
+			String age=req.getParameter("age");
+			String education=req.getParameter("education");
+			String salary=req.getParameter("salary");
+			//String select=req.getParameter("selectObj");
+			System.out.println(sex+" "+age+" "+education+" "+salary);
+			*/
+			req.getRequestDispatcher("index-search.jsp").forward(req, resp);
 		} catch (Exception e) {
 			e.printStackTrace();
 		}

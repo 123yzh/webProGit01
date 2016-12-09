@@ -3,12 +3,14 @@ package com.love.utils;
  * @author Administrator
  *功能：自动获得用户的星座信息，随机产生“爱情”宣言功能
  */
-public class GetConstellationAndDeclaration {
+public class GetConstellationAndDeclarationEtc {
 	/**实现自动获取用户星座信息
 	 * @param month
 	 * @param day
 	 * @return 用户星座信息
 	 */
+	//定义生肖数组
+	public static final String[] zodiacArr = { "猴", "鸡", "狗", "猪", "鼠", "牛", "虎", "兔", "龙", "蛇", "马", "羊" }; 
 	private static String Constellation=null;
 	private static String tempStrMale=null;
 	public static String getConstellation(int month,int day){
@@ -112,11 +114,21 @@ public class GetConstellationAndDeclaration {
 			return tempStrMale=love_word[tempFemale[0]-1];
 		}
 	}
+	
+	
+	/**
+	 * 根据日期获取生肖
+	 * @return
+	 */
+	public static String getZodica(int date) {
+	    return zodiacArr[date % 12];
+	}
+	
 	/**
 	 * 测试
 	 * @param args
-	 */
-	/*public static void main(String[] args) {
+	 
+	public static void main(String[] args) {
 		//测试自动生成星座方法
 		int month=9;
 		int day=1;
@@ -127,6 +139,8 @@ public class GetConstellationAndDeclaration {
 		System.out.println(declaration);
 		String declaration02=getDeclaration("女");
 		System.out.println(declaration02);
-	}
-	*/
+		//测试随机自动生成
+		String SX=getZodica(1995);
+		System.out.println(SX);
+	}*/
 }

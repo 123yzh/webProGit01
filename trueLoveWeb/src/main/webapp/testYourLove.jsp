@@ -39,8 +39,9 @@
 						src="images/testYourLove/20141224034651628.jpg"
 						alt="《Hello 中国》" width="160" height="110" /><a target="_blank"
 						href="javascript:void(0)"
-						tppabs="http://party.jiayuan.com/party_info.php?pid=7320">我要报名</a>
-				</div> <a href="images/testYourLove/name_to_name.swf"><h2>《姓名配对》</h2></a>
+						tppabs="#">我要报名</a>
+						<!-- 保留原来的页面，创建新网页target的_blank属性 -->
+				</div> <a id="swf_01" target="_blank"><h2>《姓名配对》</h2></a>
 				<p>
 					游戏类型：测缘牵线 <br /> 游戏方式：鼠标键盘操作 <br /> 游戏人数：单人 <br /> 开发人：小轩&nbsp小鱼<br />
 					<br />
@@ -54,7 +55,7 @@
 						alt="《缘来是你》" width="160" height="110" /><a target="_blank"
 						href="javascript:void(0)"
 						tppabs="#">我要报名</a>
-				</div> <a href="images/testYourLove/20061205010845v4j8bGx2.swf"><h2>《缘来是你》</h2></a>
+				</div> <a id="swf_02" target="_blank"><h2>《缘来是你》</h2></a>
 				<p>
 					游戏类型：：大型代际相亲交友互动仿真人游戏 <br /> 游戏方式：鼠标键盘操作 <br /> 游戏人数：单人rpg <br />
 					开发人：小轩&nbsp小鱼<br /> <br />
@@ -69,7 +70,7 @@
 						alt="《相约星期六》" width="160" height="110" /><a target="_blank"
 						href="javascript:void(0)"
 						tppabs="#">我要报名</a>
-				</div> <a href="images/testYourLove/154093b9ea7509f851739d087e4d80d3.swf"><h2>《相遇星期6》</h2></a>
+				</div> <a id="swf_03" target="_blank"><h2>《相遇星期6》</h2></a>
 				<p>
 					游戏类型:娱乐交友仿真人游戏 <br /> 游戏方式：鼠标键盘操作 <br /> 游戏人数：单人rpg <br />
 					开发人：小轩&nbsp小鱼<br /> <br />
@@ -82,7 +83,7 @@
 						src="images/testYourLove/20140919060036454.jpg"
 						alt="《大城小爱》" width="160" height="110" /><a target="_blank"
 						href="javascript:void(0)">我要报名</a>
-				</div> <a href="images/testYourLove/13547664454.swf"><h2>《大城小爱-测缘》</h2></a>
+				</div> <a id="swf_04" target="_blank"><h2>《大城小爱-测缘》</h2></a>
 				<p>
 					游戏类型：测缘牵线 <br /> 游戏方式：鼠标键盘操作 <br /> 游戏人数：单人 <br /> 开发人：小轩&nbsp小鱼<br />
 					<br />
@@ -95,7 +96,7 @@
 						src="images/testYourLove/20130117040940197.jpg"
 						alt="《两箱情愿》" width="160" height="110" /><a target="_blank"
 						href="javascript:void(0)">我要报名</a>
-				</div> <a href="images/testYourLove/b39201f389bb819e14f53585303cedbf.swf"><h2>《两厢情愿》</h2></a>
+				</div> <a id="swf_05" target="_blank"><h2>《两厢情愿》</h2></a>
 				<p>
 					游戏类型：休闲放松 <br /> 游戏方式：鼠标键盘操作 <br /> 游戏人数：单人 <br /> 开发人：小轩&nbsp小鱼<br />
 					<br />
@@ -110,8 +111,8 @@
 						src="images/testYourLove/20120418035004790.jpg"
 						alt="《全城热恋》" width="160" height="110" /><a target="_blank"
 						href="javascript:void(0)"
-						tppabs="http://www.jiayuan.com/party/party_info.php?pid=5040">我要报名</a>
-				</div> <a href="images/testYourLove/today_to_love.swf"><h2>《恋爱测试》</h2></a>
+						tppabs="#">我要报名</a>
+				</div> <a id="swf_06" target="_blank"><h2>《恋爱测试》</h2></a>
 				<p>
 					游戏类型：测缘牵线 <br /> 游戏方式：鼠标键盘操作 <br /> 游戏人数：单人 <br /> 开发人：小轩&nbsp小鱼<br />
 					<br />
@@ -125,7 +126,7 @@
 						src="images/testYourLove/20101028095614701.jpg"
 						alt="《全城热恋》" width="160" height="110" /><a target="_blank"
 						href="javascript:void(0)">我要报名</a>
-				</div> <a href="images/testYourLove/13547664454.swf"><h2>《相遇星期6》</h2></a>
+				</div> <a id="swf_07" href="404/404.html"><h2>《全城热恋》</h2></a>
 				<p>
 					游戏类型：测缘牵线 <br /> 游戏方式：鼠标键盘操作 <br /> 游戏人数：单人 <br /> 开发人：小轩&nbsp小鱼<br />
 					<br />
@@ -138,7 +139,7 @@
 						src="images/testYourLove/20101028095841708.jpg"
 						alt="《不见不散》" width="160" height="110" /><a target="_blank"
 						href="javascript:void(0)">我要报名</a>
-				</div> <a href="images/testYourLove/13547664454.swf"><h2>《相遇星期6》</h2></a>
+				</div> <a id="swf_08" href="404/404.html"><h2>《不见不散》</h2></a>
 
 				<p>
 					游戏类型：测缘牵线 <br /> 游戏方式：鼠标键盘操作 <br /> 游戏人数：单人 <br /> 开发人：小轩&nbsp小鱼<br />
@@ -154,7 +155,8 @@
 						alt="《爱的就是你》" width="160" height="110" /><a target="_blank"
 						href="javascript:void(0)">我要报名</a>
 				</div>
-				<h2>《爱的就是你》</h2>
+				<a id="swf_9" href="404/404.html"><h2>《爱的就是你》</h2></a>
+				
 				<p>
 					游戏类型：测缘牵线 <br /> 游戏方式：鼠标键盘操作 <br /> 游戏人数：单人 <br /> 开发人：小轩&nbsp小鱼<br />
 					<br />
@@ -168,19 +170,63 @@
 						alt="《全城热恋》" width="160" height="110" /><a target="_blank"
 						href="javascript:void(0)">我要报名</a>
 				</div>
-				<h2>《全城热恋》</h2>
+				<a id="swf_10" href="404/404.html"><h2>《全城热恋》</h2></a>
 				<p>
 					游戏类型：测缘牵线 <br /> 游戏方式：鼠标键盘操作 <br /> 游戏人数：单人 <br /> 开发人：小轩&nbsp小鱼<br />
 					<br />
 				</p>
 			</li>
 
-
-
 		</ul>
 	</div>
 	</div>
 	<script type="text/javascript" src="js/testYourLove/w4-simple.js"></script>
+	<script type="text/javascript">
+	 var obj_a1=document.getElementById("swf_01");
+	 var obj_a2=document.getElementById("swf_02");
+	 var obj_a3=document.getElementById("swf_03");
+	 var obj_a4=document.getElementById("swf_04");
+	 var obj_a5=document.getElementById("swf_05");
+	 var obj_a6=document.getElementById("swf_06");
+	 if(getOs()=="Firefox"){
+		 obj_a1.setAttribute("href","404/404.html");
+		 obj_a2.setAttribute("href","404/404.html");
+		 obj_a3.setAttribute("href","404/404.html");
+		 obj_a4.setAttribute("href","404/404.html");
+		 obj_a5.setAttribute("href","404/404.html");
+		 obj_a6.setAttribute("href","404/404.html");
+	 }else{
+	 	obj_a1.setAttribute("href","images/testYourLove/name_to_name.swf");
+	 	obj_a2.setAttribute("href","images/testYourLove/20061205010845v4j8bGx2.swf");
+	 	obj_a3.setAttribute("href","images/testYourLove/154093b9ea7509f851739d087e4d80d3.swf");
+		obj_a4.setAttribute("href","images/testYourLove/13547664454.swf");
+	 	obj_a5.setAttribute("href","images/testYourLove/b39201f389bb819e14f53585303cedbf.swf");
+	 	obj_a6.setAttribute("href","images/testYourLove/today_to_love.swf");
+	 }
+	 //解决火狐无法解析swf文件的问题：设404页面
+	 function getOs()  
+	 {  
+	     var OsObject = "";  
+	    if(navigator.userAgent.indexOf("MSIE")>0) {  
+	         return "MSIE";  
+	    }  
+	    if(isFirefox=navigator.userAgent.indexOf("Firefox")>0){  
+	         return "Firefox";  
+	    }  
+	    if(isSafari=navigator.userAgent.indexOf("Safari")>0) {  
+	         return "Safari";  
+	    }   
+	    if(isCamino=navigator.userAgent.indexOf("Camino")>0){  
+	         return "Camino";  
+	    }  
+	    if(isMozilla=navigator.userAgent.indexOf("Gecko/")>0){  
+	         return "Gecko";  
+	    }  
+	      
+	 }  
+	 //alert("您的浏览器类型为:"+getOs());  
+	   
+	</script>
 </body>
 </html>
 <!-- released time 2016-09-08 10:20:45 -->
